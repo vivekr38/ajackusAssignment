@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Q</h1>
+      <p>Please confirm or edit your contact information, so that we can<br>notify you when you are approved for your BETA</p>
+      <hr>
+      <form #signupForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label class="form-title" for="name">NAME</label><br>
+          <input type="text" class="form-control" name="name" [(ngModel)]="defaultSignUpModel.name" [readonly]="true">
+        </div>
+        <div class="form-group">
+          <label class="form-title" for="email">EMAIL ADDRESS</label><br>
+          <input type="text" class="form-control" name="email" [(ngModel)]="defaultSignUpModel.email" [readonly]="true">
+        </div>
+        <div class="form-group">
+          <label class="form-title" for="email">PASSWORD</label><br>
+          <input type="password" placeholder="Type a password" class="form-control styleOverride" name="password" [(ngModel)]="defaultSignUpModel.password" required>
+        </div>
+        <hr>
+        <div class="signupbtn">
+          <button [disabled]="!signupForm.form.valid" type="submit" class="btn btn-success">SIGN UP</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

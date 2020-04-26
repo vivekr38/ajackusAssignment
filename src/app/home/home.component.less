@@ -1,0 +1,281 @@
+@mobile-screen: ~'(max-width: 767px)';
+@tabletPortrait-screen: ~'(min-width: 768px)';
+@tablet-screen: ~'(min-width: 992px)';
+@wide-screen-down: ~'(min-width: 1200px)';
+@background-color :white;
+@height: 100%;
+@containerPadding-right: 15px;
+@containerPadding-left: 15px;
+@ContainerMargin-right: auto;
+@containerMargin-left: auto;
+@text-align: center;
+@contentColor:#EF4F49;
+@font-face{
+    font-family: 'sfcompactdisplay_bold';
+    src: url('/assets/Fonts/SF-Compact-Display-Bold.otf');
+}
+@font-face{
+    font-family: 'sfcompactdisplay_regular';
+    src: url('/assets/Fonts/SF-Compact-Display-Regular.otf');
+}
+
+html,body{
+    background-color: @background-color;
+    height: @height;
+}
+@media @mobile-screen {
+    .container{
+        padding-right: @containerPadding-right;
+        padding-left: @containerPadding-left;
+        margin-right: @ContainerMargin-right;
+        margin-left: @containerMargin-left;
+    }
+    img:extend(.center){
+        text-align: @text-align;
+        opacity: 0.4;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    h1{
+        font-family: 'sfcompactdisplay_regular';
+        text-align: @text-align;
+        font-size: 26px;
+        color: #26517A;
+        span{
+            color:@contentColor;
+            font-size: 20px;
+        }
+    }
+    h2{
+        font-family: 'sfcompactdisplay_bold';
+        text-align: @text-align;
+        color:@contentColor;
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+    p{
+        font-family: 'sfcompactdisplay_regular';
+        text-align: @text-align;
+        font-size: 13px;
+        color:#9A9FA1;
+        margin-bottom: 50px;
+    }
+    .signupbtn{
+        text-align: @text-align;
+        margin-top: 20px;
+        a{
+            color:@contentColor;
+            border: solid 2px @contentColor;
+            text-transform: uppercase;
+            font-family: 'sfcompactdisplay_bold';
+            font-size: 11px;
+            text-decoration: none;
+            padding: 10px 20px;
+            
+        }
+        P{
+            font-family: 'sfcompactdisplay_bold';
+            font-size: 11px;
+            margin-top: 25px;
+            color: #CBCACA;
+        }
+    }
+}
+@media @tabletPortrait-screen {
+    .container{
+        padding-right: @containerPadding-right;
+        padding-left: @containerPadding-left;
+        margin-right: @ContainerMargin-right;
+        margin-left: @containerMargin-left;
+    }
+    img:extend(.center){
+        text-align: @text-align;
+        opacity: 0.4;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    h1{
+        font-family: 'sfcompactdisplay_regular';
+        text-align: @text-align;
+        font-size: 26px;
+        color: #26517A;
+        span{
+            color:@contentColor;
+            font-size: 20px;
+        }
+    }
+    h2{
+        font-family: 'sfcompactdisplay_bold';
+        text-align: @text-align;
+        color:@contentColor;
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+    p{
+        font-family: 'sfcompactdisplay_regular';
+        text-align: @text-align;
+        font-size: 13px;
+        color:#9A9FA1;
+        margin-bottom: 50px;
+    }
+    .signupbtn{
+        text-align: @text-align;
+        margin-top: 20px;
+        a{
+            color:@contentColor;
+            border: solid 2px @contentColor;
+            text-transform: uppercase;
+            font-family: 'sfcompactdisplay_bold';
+            font-size: 11px;
+            text-decoration: none;
+            padding: 10px 20px;
+            
+        }
+        P{
+            font-family: 'sfcompactdisplay_bold';
+            font-size: 11px;
+            margin-top: 25px;
+            color: #CBCACA;
+        }
+    }
+}
+@media @tablet-screen {
+    .container{
+        padding-right: @containerPadding-right;
+        padding-left: @containerPadding-left;
+        margin-right: @ContainerMargin-right;
+        margin-left: @containerMargin-left;
+    }
+    img:extend(.center){
+        text-align: @text-align;
+        opacity: 0.4;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    h1{
+        font-family: 'sfcompactdisplay_regular';
+        text-align: @text-align;
+        font-size: 26px;
+        color: #26517A;
+        span{
+            color:@contentColor;
+            font-size: 20px;
+        }
+    }
+    h2{
+        font-family: 'sfcompactdisplay_bold';
+        text-align: @text-align;
+        color:@contentColor;
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+    p{
+        font-family: 'sfcompactdisplay_regular';
+        text-align: @text-align;
+        font-size: 13px;
+        color:#9A9FA1;
+        margin-bottom: 50px;
+    }
+    .signupbtn{
+        text-align: @text-align;
+        margin-top: 20px;
+        a{
+            color:@contentColor;
+            border: solid 2px @contentColor;
+            text-transform: uppercase;
+            font-family: 'sfcompactdisplay_bold';
+            font-size: 11px;
+            text-decoration: none;
+            padding: 10px 20px;
+            
+        }
+        P{
+            font-family: 'sfcompactdisplay_bold';
+            font-size: 11px;
+            margin-top: 25px;
+            color: #CBCACA;
+        }
+    }
+}
+@media @wide-screen-down {
+    .container{
+        padding-right: @containerPadding-right;
+        padding-left: @containerPadding-left;
+        margin-right: @ContainerMargin-right;
+        margin-left: @containerMargin-left;
+    }
+    img:extend(.center){
+        text-align: @text-align;
+        opacity: 0.4;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    h1{
+        font-family: 'sfcompactdisplay_regular';
+        text-align: @text-align;
+        font-size: 26px;
+        color: #26517A;
+        span{
+            color:@contentColor;
+            font-size: 20px;
+        }
+    }
+    h2{
+        font-family: 'sfcompactdisplay_bold';
+        text-align: @text-align;
+        color:@contentColor;
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+    p{
+        font-family: 'sfcompactdisplay_regular';
+        text-align: @text-align;
+        font-size: 13px;
+        color:#9A9FA1;
+        margin-bottom: 50px;
+    }
+    .signupbtn{
+        text-align: @text-align;
+        margin-top: 20px;
+        a{
+            color:@contentColor;
+            border: solid 2px @contentColor;
+            text-transform: uppercase;
+            font-family: 'sfcompactdisplay_bold';
+            font-size: 11px;
+            text-decoration: none;
+            padding: 10px 20px;
+            
+        }
+        P{
+            font-family: 'sfcompactdisplay_bold';
+            font-size: 11px;
+            margin-top: 25px;
+            color: #CBCACA;
+        }
+    }
+}
